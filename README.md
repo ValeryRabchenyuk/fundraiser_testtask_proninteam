@@ -1,0 +1,1 @@
+# fundraiser_testtask_proninteam
