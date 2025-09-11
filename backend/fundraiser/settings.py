@@ -22,7 +22,9 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework',
     'djoser',
-    'drf_spectacular',          #нужно придумать и зарегать приложения 
+    'drf_spectacular',
+    'payment',
+    'collect',
 ]
 
 MIDDLEWARE = [
