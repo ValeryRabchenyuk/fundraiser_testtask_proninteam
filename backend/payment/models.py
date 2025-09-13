@@ -4,6 +4,8 @@ from django.db.models import F
 from collect.models import Collect
 from django.contrib.auth.models import User
 
+from collect.constants import MAX_AMOUNT_NUMBER, DECIMAL_NUMBER
+
 
 class Payment(models.Model):
     """Платёж для сбора."""
@@ -20,8 +22,8 @@ class Payment(models.Model):
         verbose_name='Донор'
     )
     amount = models.DecimalField(
-        max_digits=12,
-        decimal_places=2,
+        max_digits=MAX_AMOUNT_NUMBER,
+        decimal_places=DECIMAL_NUMBER,
         verbose_name='Сумма пожертвования'
     )
     created_at = models.DateTimeField(
