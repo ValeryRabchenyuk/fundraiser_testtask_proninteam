@@ -23,10 +23,6 @@ class Collect(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     ends_at = models.DateTimeField(null=True, blank=True, verbose_name='Дата окончания')
 
-    @property
-    def is_unlimited(self):
-        return self.target_amount is None
-
     class Meta:
         ordering = ('-created_at',)
         verbose_name = 'Сбор'
