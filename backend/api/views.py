@@ -1,20 +1,13 @@
-from django.shortcuts import render
-
-from django.contrib.auth import get_user_model
-from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, redirect
-from rest_framework import status, viewsets
+from django.shortcuts import get_object_or_404
+from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.permissions import (IsAuthenticated,
                                         IsAuthenticatedOrReadOnly)
 from rest_framework.response import Response
-from rest_framework.reverse import reverse
 
-from api.permissions import IsAuthorOrReadOnly
 from .serializers import (
     CollectSerializer, CollectCreateSerializer,
     PaymentSerializer, PaymentCreateSerializer,
-    UserSerializer
 )
 from payment.models import Payment
 from collect.models import Collect
