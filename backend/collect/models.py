@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-from .constants import (
+from fundraiser.constants import (
     TITLE_MAX_LENGTH,
     REASON_MAX_LENGTH,
     MAX_AMOUNT_NUMBER,

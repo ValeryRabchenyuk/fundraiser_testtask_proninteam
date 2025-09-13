@@ -4,7 +4,7 @@ from django.db.models import F
 from collect.models import Collect
 from django.contrib.auth.models import User
 
-from collect.constants import MAX_AMOUNT_NUMBER, DECIMAL_NUMBER
+from fundraiser.constants import MAX_AMOUNT_NUMBER, DECIMAL_NUMBER
 
 
 class Payment(models.Model):
